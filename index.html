@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison KEKHO — виджет бронирования</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="lab">
+    <header class="lab-bar">
+      <div class="lab-brand">
+        <span class="lab-mark">K</span>
+        <div>
+          <p class="lab-kicker">Интерактивный прототип</p>
+          <h1>Виджет бронирования номера</h1>
+        </div>
+      </div>
+      <div class="lab-hint">
+        Меняйте даты, гостей и номера слева — экраны услуг и подтверждения обновляются сразу
+      </div>
+      <div class="presets" id="presets"></div>
+    </header>
+
+    <main class="screens">
+      <section class="widget" data-screen="1">
+        <div class="widget-chrome">
+          <span class="step-index">01</span>
+          <div>
+            <p class="widget-kicker">Экран 1</p>
+            <h2>Номер и тариф</h2>
+          </div>
+          <span class="live-dot" title="Источник параметров">source</span>
+        </div>
+        <div class="widget-scroll" id="screen-1"></div>
+        <div class="widget-dock" id="dock-1"></div>
+      </section>
+
+      <section class="widget" data-screen="2">
+        <div class="widget-chrome">
+          <span class="step-index">02</span>
+          <div>
+            <p class="widget-kicker">Экран 2</p>
+            <h2>Дополнительные услуги</h2>
+          </div>
+          <span class="live-dot live">live</span>
+        </div>
+        <div class="widget-scroll" id="screen-2"></div>
+        <div class="widget-dock" id="dock-2"></div>
+      </section>
+
+      <section class="widget" data-screen="3">
+        <div class="widget-chrome">
+          <span class="step-index">03</span>
+          <div>
+            <p class="widget-kicker">Экран 3</p>
+            <h2>Подтверждение</h2>
+          </div>
+          <span class="live-dot live">live</span>
+        </div>
+        <div class="widget-scroll" id="screen-3"></div>
+        <div class="widget-dock" id="dock-3"></div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
